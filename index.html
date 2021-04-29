@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+         <link href='https://fonts.googleapis.com/css?family=Ewert' rel='stylesheet'> 
+         <link href="https://fonts.googleapis.com/css2?family=Sail&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    <body>
+    <script>
+        window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play() { document.getElementById("a").play();
+}
+    </script>
+    <style>
+       *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    color:lightblue;
+}
+
+.box{
+    height:100vh;
+    width:100vw;
+    background-color:red;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    overflow:hidden;
+    background-image:url("https://i.gifer.com/HBx8.gif");
+     background-size:100% 100%;
+}
+
+
+.sc1{
+    position:absolute; 
+    left:0;
+    width:50vw; 
+    height:98vh; 
+    border-bottom-right-radius:98vh;
+    border-top-right-radius:98vh; 
+    background: #f57070;
+    animation:anim 7s both, left 3s 7s both;
+}
+
+.sc2{
+    position:absolute; 
+    right:0;
+    width:50vw; 
+    height:98vh; 
+    border-bottom-left-radius:98vh;
+    border-top-left-radius:98vh; 
+    background: #f57070;
+    animation:anim 7s both, right 3s 7s both;
+}
+
+.sc{
+    border:5px double black;
+    background-size:100% 100%;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxlInJsFmMsI2b5ZvDsBi0z15u-Fvmcaw5Q&usqp=CAU");
+    
+}
+
+@keyframes anim{
+    from{
+        
+    }
+    to{
+        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpjLL0E6hw5SjbliefZSbyfIgKSOkhwutRgA&usqp=CAU");
+    }
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+}
+
+.profile{
+    position:absolute;
+    height:250px;
+    width:250px;
+    background-color:green;
+    border-radius:50%;
+    background-image:url("https://api.sololearn.com/Uploads/Avatars/10107008.jpg");
+    background-size:100% 100%;
+    box-shadow:.1rem .1rem .3rem hotpink,
+              -0.1rem -0.1rem .3rem hotpink;
+    animation: rotate 5s 2s  both;         
+}
+
+@keyframes rotate{
+    0% {
+        transform:rotate(0deg);
+        opacity:1;
+    }
+    25% {
+        transform:rotate(360deg);
+        opacity:0.7;
+       }
+    75% {
+        transform:rotate(-360deg);
+        opacity:0.4;
+       }  
+    100% {
+        transform:rotate(0deg);
+        opacity:0;
+       }   
+}
+
+
+.back{
+    height:98vh;
+    width:98vw;
+    padding-top:1.5vh;
+    padding-bottom:1.5vh;
+    padding-left:1.5vw;
+    padding-right:1.5vw;
+    background-color:black;
+    background-image: linear-gradient(45deg, rgba(22, 31, 43, 0.5) 0%, rgba(22, 31, 43, 0.5) 12.5%,rgba(53, 28, 54, 0.5) 12.5%, rgba(53, 28, 54, 0.5) 25%,rgba(83, 25, 65, 0.5) 25%, rgba(83, 25, 65, 0.5) 37.5%,rgba(114, 22, 76, 0.5) 37.5%, rgba(114, 22, 76, 0.5) 50%,rgba(144, 20, 86, 0.5) 50%, rgba(144, 20, 86, 0.5) 62.5%,rgba(175, 17, 97, 0.5) 62.5%, rgba(175, 17, 97, 0.5) 75%,rgba(205, 14, 108, 0.5) 75%, rgba(205, 14, 108, 0.5) 87.5%,rgba(236, 11, 119, 0.5) 87.5%, rgba(236, 11, 119, 0.5) 100%),linear-gradient(135deg, rgb(188, 0, 159) 0%, rgb(188, 0, 159) 12.5%,rgb(173, 4, 150) 12.5%, rgb(173, 4, 150) 25%,rgb(158, 7, 141) 25%, rgb(158, 7, 141) 37.5%,rgb(143, 11, 132) 37.5%, rgb(143, 11, 132) 50%,rgb(129, 15, 124) 50%, rgb(129, 15, 124) 62.5%,rgb(114, 19, 115) 62.5%, rgb(114, 19, 115) 75%,rgb(99, 22, 106) 75%, rgb(99, 22, 106) 87.5%,rgb(84, 26, 97) 87.5%, rgb(84, 26, 97) 100%);
+}
+
+
+.hbd{
+    height:24%;
+    width:100%;
+    display:grid;
+    place-items:center;
+    background-color:transparent;
+    text-align:center;
+    font-family:'Ewert';
+    font-size:200%;
+    overflow:scroll;
+    color:white;
+}
+
+.wish{
+    height:48%;
+    width:100%;
+    background-color:transparent;
+    margin-top:3%;
+    text-align:center;
+    font-family:'Lora';
+    overflow:scroll;
+}
+
+.footer{
+    height:24%;
+    width:100%;
+    background-color:transparent;
+    margin-top:3%;
+    font-family:'Sail';
+    font-size:90%;
+    overflow:scroll;
+}
+
+
+ 
+    </style>
+    <audio controls style=" display:none;" loop   id="a"  >
+ <source src="https://dl.dropbox.com/s/khzeantphx1yclq/Coca-Cola-O-Brother-O-Bhai-Mohit-Chauhan-Tv-ad-Song-2017-Download-Part.mp3?dl=0">
+    <script>
+     Swal.fire('Happy birthday By God Bhaiya🎊\n A small try🧗‍♀️ to express my gratitude🤗 \n It is quite simple😕 and boring😥 as I am a beginner😔 ')
+        </script>  
+      </audio>    
+        <div class="box">
+            <div class="back">
+                <div class="hbd">Happy Birthday Amit ~ My By God Bhaiya</div>
+                <div class="wish"><br>You are the best brother in the universe. Your smile is unique, you are the cutest and you have such a great heart. Helping other people is all what you do and that is why I
+want you to have the best birthday
+ever.<br><br>Brothers are special
+They’re one of a kind
+And good ones are rare
+Even harder to find
+But I guess that I’m lucky
+Because I have you
+Who’s funny and smart
+And talented too
+Happy Birthday, dear brother<br><br> </div>
+                <div class="footer">Thank you sooooooooooo much bhaiya for coming in my life and supporting me and spreading soooooo much positivity in my life and always being there to lighten my dark path and helping me<br>
+
+May all your wishes comes true and you have a never ending smile on your face forever 😊😊
+
+Wishing you a year ahead filled with happiness,  joy , prosperity and success. And yeah! Lots of maggi chocolate and ice cream too😄😄😄</div>
+            </div>
+            <div class ="sc sc1"></div>
+            <div class="sc sc2"></div>
+            <div class="profile"></div>
+        </div>
+    </body>
+</html>
